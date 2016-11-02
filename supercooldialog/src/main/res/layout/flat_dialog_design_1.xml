@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/layoutYourIdeaDialog"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgYourIdeaDialog"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_smile"
+        style="@style/img_idea_success_dialog"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/textYourIdeaDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/text_idea_success_dialog"
+        android:text="@string/your_idea_submitted_successfully"/>
+    <ImageButton
+        android:id="@+id/imgBtnYourIdeaDialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue_1"
+        android:src="@drawable/ic_done"
+        />
+    </LinearLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Super Cool Dialog</string>
+
+    <string name="submitting">submitting</string>
+    <string name="your_idea_submitted_successfully">Your Idea submitted successfully</string>
+    <string name="idea_not_submit">Your idea not submitted successfully.Check Fields and Try Again</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="log_in">LOG IN</string>
+    <string name="required">required</string>
+</resources>
