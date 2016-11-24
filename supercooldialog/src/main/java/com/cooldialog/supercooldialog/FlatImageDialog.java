@@ -30,7 +30,7 @@ public class FlatImageDialog extends Dialog implements View.OnClickListener {
 
 
     public  interface OnCoolDialogClickListner{
-        void onClick(FlatImageDialog flatImageDialog);
+        void onClick(AlertDialog flatImageDialog);
     }
 
 
@@ -39,24 +39,29 @@ public class FlatImageDialog extends Dialog implements View.OnClickListener {
         this.context = context;
     }
 
-    public void backGroundColor(int backgroundColor){
+    public FlatImageDialog backgroundColor(int backgroundColor){
         this.BACKGROUND_COLOUR = backgroundColor;
+        return this;
     }
 
-    public void image(int image){
+    public FlatImageDialog image(int image){
         this.IMAGE = image;
+        return this;
     }
 
-    public void message(String message){
+    public FlatImageDialog message(String message){
         this.MESSAGE = message;
+        return this;
     }
 
-    public void buttonImage(int imageResource){
+    public FlatImageDialog buttonImage(int imageResource){
         this.BUTTON_IMAGE = imageResource;
+        return this;
     }
 
-    public void buttonColour(int buttonColor){
+    public FlatImageDialog buttonColour(int buttonColor){
         BUTTON_BACKGROUND_COLOUR = buttonColor;
+        return this;
     }
 
     public FlatImageDialog setCancelClickListner(OnCoolDialogClickListner cancelClickListner){
@@ -86,18 +91,18 @@ public class FlatImageDialog extends Dialog implements View.OnClickListener {
 
         alertDialog = alertDialogBuilder.create();
 
-
         alertDialog.show();
     }
 
     public void dismissDialog(){
-        FlatImageDialog.super.dismiss();
+
     }
+
 
     @Override
     public void onClick(View view) {
         if (mCancelClickListner != null) {
-            mCancelClickListner.onClick(FlatImageDialog.this);
+            mCancelClickListner.onClick(alertDialog);
         }
     }
 

@@ -12,30 +12,28 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
 
 
 public class MainActivity extends AppCompatActivity  {
+    FlatImageDialog flatImageDialog;
+    FlatImageDialog flatImageDialog2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        FlatImageDialog flatImageDialog = new  FlatImageDialog(this);
+        flatImageDialog = new FlatImageDialog(this);
+        flatImageDialog2 = flatImageDialog;
         flatImageDialog.message("haai");
-        flatImageDialog.backGroundColor(R.color.colorAccent);
-        View.OnClickListener onClickListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                 Toast.makeText(getApplicationContext(),"ok",Toast.LENGTH_SHORT).show();
-            }
-        };
+        flatImageDialog.backgroundColor(R.color.colorAccent);
+
         flatImageDialog.setCancelClickListner(new FlatImageDialog.OnCoolDialogClickListner() {
             @Override
-            public void onClick(FlatImageDialog flatImageDialog) {
-                flatImageDialog.dismissDialog();
+            public void onClick(AlertDialog flatImageDialog) {
+                flatImageDialog.dismiss();
             }
         });
         flatImageDialog.show();
 
-       /* new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+        new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                 .setTitleText("Are you sure?")
                 .setContentText("Won't be able to recover this file!")
                 .setConfirmText("Yes,delete it!")
@@ -45,6 +43,6 @@ public class MainActivity extends AppCompatActivity  {
                         sDialog.dismissWithAnimation();
                     }
                 })
-                .show();*/
+                .show();
     }
 }

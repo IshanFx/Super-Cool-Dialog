@@ -14,6 +14,7 @@ import android.widget.TextView;
  */
 
 public class DialogMaster {
+
     Context context;
     public DialogMaster(Context context){
         this.context = context;

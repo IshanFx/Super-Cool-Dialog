@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SuperCoolDialog.iml" filepath="$PROJECT_DIR$/SuperCoolDialog.iml" />
       <module fileurl="file://$PROJECT_DIR$/SuperCoolDialoglibrary.iml" filepath="$PROJECT_DIR$/SuperCoolDialoglibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/supercooldialog/supercooldialog.iml" filepath="$PROJECT_DIR$/supercooldialog/supercooldialog.iml" />
